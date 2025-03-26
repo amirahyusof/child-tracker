@@ -9,7 +9,6 @@ export default function ListActivity({ activityData, setActivityData}) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const childId = searchParams.get('childId');
-  const userId = searchParams.get('userId');
   const { deleteActivity } = routeDB();
   const [deleteTaskId, setDeletingTaskId] = useState(null);
 

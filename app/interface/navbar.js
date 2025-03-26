@@ -1,6 +1,6 @@
 "use client"
 
-import { Home, User, Flower, Sticker } from 'lucide-react'
+import { Home, User, Candy, Sticker } from 'lucide-react'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { useAuth } from '../firebase/hook';
@@ -16,15 +16,15 @@ export default function NavBar() {
 
   const navItems = [
     { href: "/mainpage", icon: Home, label: 'Home' },
-    { href: "/mainpage/activityList", icon: Sticker, label: 'Activity' },
-    { href: "/mainpage/virtualGarden", icon: Flower, label: 'Flower' },
-    { href: "/mainpage/profile/parent", icon: User, label: 'Profile' },
+    { href: "/mainpage/listActivity", icon: Sticker, label: 'Activity' },
+    { href: "/mainpage/child-data", icon: Candy, label: 'Kids' },
+    { href: "/mainpage/profile", icon: User, label: 'Profile' },
     
   ];
 
   return (
     <>
-      {/* Desktop Sidebar */}
+      {/* Navigation bar bottom */}
         <div className="fixed bottom-0 left-0 right-0 flex flex-row justify-center mx-auto w-11/12 bg-[#FFB4B4] text-white">
           <div className="p-4">
             <nav>
